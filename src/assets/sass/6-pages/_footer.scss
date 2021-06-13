@@ -1,0 +1,37 @@
+footer {
+    text-align      : center;
+    padding-bottom  : 25px;
+    background-color: $footerBgColor;
+
+
+    .footer-upper {
+        margin-bottom: 50px;
+
+        &::before {
+            content         : "";
+            height          : 4px;
+            width           : 100px;
+            background-color: $primaryColor;
+            margin          : 0 auto;
+            display         : block;
+        }
+
+        .logo {
+            margin: 45px 0;
+        }
+    }
+
+    .footer-description,
+    .copyright {
+        color  : $lightWhite;
+        opacity: .5;
+    }
+    
+    .copyright {
+        margin: 50px 0;
+    }
+
+    .footer-social {
+        
+    }
+}

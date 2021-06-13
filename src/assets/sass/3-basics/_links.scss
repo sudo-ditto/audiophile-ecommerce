@@ -1,7 +1,12 @@
 a {
     text-decoration: none;
+    color: $linkColor;
     
     &:visited {
         color: unset;
+    }
+
+    &.active {
+        color: $primaryColor;
     }
 }

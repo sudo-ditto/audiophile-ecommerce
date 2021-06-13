@@ -1,10 +1,11 @@
 import React from 'react';
+import bestGear from '../../../assets/images/shared/mobile/image-best-gear.jpg';
 
 const AboutAudioPhile = () => {
     return (
-        <section id="about">
-            <div className="about-image">
-                <img src="" alt="" />
+        <section id="about" className="page-wrapper">
+            <div className="about-image__container">
+                <img src={bestGear} alt="Photo of a man listening to music on audiophile headphones." className="about-image"/>
             </div>
             <div className="about-metadata">
                 <h2 className="about-title">Bringing you the <strong>best</strong> audio gear</h2>
