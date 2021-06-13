@@ -220,7 +220,9 @@ Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://
 
 ### Goals:  
 
-I have spent a total of 7 hours building this project.
+I have spent a total of 9.5 hours building this project.
+
+**Estimate:** 35 hours
 
 ## Support me
 
