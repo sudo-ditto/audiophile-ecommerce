@@ -179,13 +179,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Project Status
 
 ### Current
-Project setup.
+Styling homepage
 
 ### Next steps:
-- [ ] Create initial project structure.
-- [ ] Create and style header.
-- [ ] Create and style footer.
-- [ ] Create and style home page.
+- [X] Create initial project structure.
+- [X] Create and style header.
+- [X] Create and style footer.
+- [X] Create and style home page.
 - [ ] Add a side drawer.
 - [ ] Create and style product page.
 - [ ] Add cart component and functionality.
@@ -217,7 +217,7 @@ See live:
 
 ### Goals:  
 
-I have spent a total of 1 hours building this project.
+I have spent a total of 7 hours building this project.
 
 ## Support me
 
