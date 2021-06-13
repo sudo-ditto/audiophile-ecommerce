@@ -1,8 +1,8 @@
 header {
     @include flexItem(space-between, center, row);
-    // position: fixed;
-    background-color: black;
+    position: fixed;
     color: $headerColor;
+    z-index: 100;
     height       : $headerHeight;
     border-bottom: 1px solid $borderBottom;
     box-sizing: border-box;

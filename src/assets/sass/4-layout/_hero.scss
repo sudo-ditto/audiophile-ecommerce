@@ -1,0 +1,9 @@
+#hero {
+    height             : 92vh;
+    background-image   : url('../../../assets/images/home/mobile/image-header.jpg');
+    background-position: center center;
+    background-size    : contain;
+    filter             : contrast(108%);
+
+    @include flexItem(center, center, column);
+}
