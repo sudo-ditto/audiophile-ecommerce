@@ -1,0 +1,19 @@
+.btn {
+    text-transform: uppercase;
+    padding       : 15px 35px;
+    
+    &.product-btn--orange {
+        background-color: $primaryColor;
+    }
+    
+    &.product-btn--transparent {
+        background-color: none;
+        border: 1px solid black;
+        color: black;
+    }
+    
+        &.product-btn--black {
+            background-color: black;
+            color: white;
+        }
+}

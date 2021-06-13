@@ -1,16 +1,14 @@
 import React from 'react';
-import ProductDescription from '../ProductComponents/ProductDescription';
+import ProductData from '../ProductComponents/ProductData';
 import Button from '../UI/Button';
 
 const Hero = () => {
     return (
         <section id="hero">
-            <ProductDescription newProduct description="sd" >
-                <h1>adasd</h1>
-            </ProductDescription>
-            <ProductDescription description="sd" >
-                <h2>adasd</h2>
-            </ProductDescription>
+            <ProductData newProduct btn="orange" type="hero">
+                <h3>XX99 Mark II HeadphoneS</h3>
+                <p className="product-description">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+            </ProductData>
         </section>
     )
 }

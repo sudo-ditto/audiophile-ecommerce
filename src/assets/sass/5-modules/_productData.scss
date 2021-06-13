@@ -1,0 +1,27 @@
+.product-data__wp {
+    height: 50%;
+    &--hero {
+        @extend .product-data__wp;
+        color: white;
+
+        // New product subtitle
+        .overline {
+            color  : $newProductColor;
+            opacity: 0.5;
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin: 15px;
+        }
+
+        .product-description {
+            font-weight: 100;
+            opacity: 0.8;
+            margin: 25px 0 40px 0;
+        }
+    }
+
+    text-align: center;
+    width     : 90%
+}
