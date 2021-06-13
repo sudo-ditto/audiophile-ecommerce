@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../UI/Button';
 
-const ProductData = ({ children, newProduct, type, btn }) => {
+const ProductData = ({ children, newProduct, type, btn, urlLink }) => {
 
     const classList = `product-data__wp ${type === "hero" ? "product-data__wp--hero" : type === "home" ? "product-description__wp--home" : "product-description__wp--product"}`
 

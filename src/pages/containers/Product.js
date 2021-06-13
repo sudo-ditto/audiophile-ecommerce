@@ -1,28 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ProductCard from '../components/ProductComponents/ProductCard';
 import data from '../../assets/data/data';
 import { useParams } from 'react-router';
-import ProductCard from '../components/ProductComponents/ProductCard';
+import AboutAudioPhile from '../components/HomeComponents/AboutAudioPhile';
+import Categories from '../components/CategoryComponents/Categories';
 
 const Product = () => {
-    const { product: category } = useParams();
-    console.log(category);
+    const { product } = useParams();
+
+    const productData = data.find(prod => {
+        return prod.slug === product;
+    }
+    );
 
     return (
-        <section id="products">
-            <div className="products-title__container">
-                <h1>{category}</h1>
-            </div>
-            <div className="products-wrapper page-wrapper">
+        <section id="product">
+            <ProductCard image={productData.image} productDescription={productData.description}></ProductCard>
 
-                {data.map(product => {
-                    if (product.category === category) {
-                        return (
-                            <ProductCard key={product.id} image={product.image.mobile} productTitle={product.name}
-                                productDescription={product.description} imageAlt={product.name}></ProductCard>
-                        )
-                    }
-                })}
-            </div>
+            <Categories />
+            <AboutAudioPhile />
         </section>
     )
 }

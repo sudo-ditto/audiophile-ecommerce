@@ -20,6 +20,7 @@
 @import '4-layout/_logo';
 @import '4-layout/_hero';
 @import '4-layout/_pageLayout';
+@import '4-layout/_modal';
 
 // 5 - MODULES
 @import '5-modules/_hamburger';
@@ -28,10 +29,12 @@
 @import '5-modules/_productCategory';
 @import '5-modules/_aboutAudiophile';
 @import '5-modules/_mainNavigation';
+@import '5-modules/_orderConfirmation';
 
 //  6 - PAGES
 @import '6-pages/_header';
 @import '6-pages/_footer';
+@import '6-pages/_product';
 @import '6-pages/_products';
 
 
