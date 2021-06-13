@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <OrderConfirmation></OrderConfirmation>
+      {/* <OrderConfirmation></OrderConfirmation> */}
       <Switch>
         <Route path="/" exact>
           <Home />
