@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NavListItem = ({ children, urlLink }) => {
+const NavListItem = ({ children, urlLink, exact }) => {
     return (
         <li>
-            <NavLink to={urlLink}>{children}</NavLink>
+            <NavLink to={urlLink} exact={exact}>{children} </NavLink>
         </li>
     )
 }

@@ -204,8 +204,11 @@ Styling homepage
 
 N/A - Coming soon
 
-See live:
-[Portfolio](https://loretta-arineva.dev) 
+See live: [Audio[hile E-commerce website]](https://audiophile-ecommerce.netlify.app/)
+
+Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://github.com/loretta-arineva/audiophile-ecommerce)
+
+
 
 
 ## Reflection
@@ -263,6 +266,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ### Author
 > Loreta Krasteva
 
+Check out my [Portfolio](https://loretta-arineva.dev). I hope you love it as much as I do!
+
 <a href="https://github.com/loretta-arineva" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
@@ -270,7 +275,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
 </a>  
   
-<!-- See live: [Rest Countries API: Where in the world](https://rest-countries-api-react-redux.netlify.app/) -->
+See live: [Audiophile E-commerce website]](https://audiophile-ecommerce.netlify.app/)
 
 Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://github.com/loretta-arineva/audiophile-ecommerce)
 

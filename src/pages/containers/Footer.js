@@ -1,4 +1,4 @@
-import { faFacebook, faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Logo from '../components/UI/Logo';

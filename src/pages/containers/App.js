@@ -18,14 +18,13 @@ function App() {
       <Header />
 
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <Home />
         </Route>
         <Route path="/products/:product">
           <Product />
         </Route>
       </Switch>
-
       <Footer />
     </ Router>
   );
