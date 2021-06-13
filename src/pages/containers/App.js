@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/sass/main.scss';
 
 import Footer from './Footer';
 import Header from './Header';

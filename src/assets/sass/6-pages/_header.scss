@@ -1,0 +1,20 @@
+header {
+    @include flexItem(space-between, center, row);
+    // position: fixed;
+    background-color: black;
+    color: $headerColor;
+    height       : $headerHeight;
+    border-bottom: 1px solid $borderBottom;
+    box-sizing: border-box;
+    width: 100%;
+
+    .menu-logo {
+        @include flexItem(center, center, row);
+        width       : inherit;
+
+        .logo {
+            @include flexItem(center, center, row);
+            width       : inherit;
+        }
+    }
+}
