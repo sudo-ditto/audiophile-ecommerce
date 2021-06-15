@@ -24,12 +24,14 @@ const Product = () => {
                 <p className="product-price">$ {productData.price}</p>
                 <ProductQuantity />
             </div>
+
             <div className="features" style={{ "whiteSpace": "pre-wrap" }}>
                 <h3>Features</h3>
                 <p>
                     {productData.features}
                 </p>
             </div>
+            
             <div className="included">
                 <h3>In the box</h3>
                 {productData.includes.map((feature, key) => {
