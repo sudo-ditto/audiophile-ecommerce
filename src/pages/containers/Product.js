@@ -7,6 +7,7 @@ import Categories from '../components/CategoryComponents/Categories';
 import Button from '../components/UI/Button';
 import ProductQuantity from '../components/ProductComponents/ProductQuantity';
 import GoBack from '../components/UI/GoBack';
+import ContentWrapper from '../components/ProductComponents/ContentWrapper';
 
 const Product = () => {
     const { product } = useParams();
@@ -19,28 +20,28 @@ const Product = () => {
     return (
         <section id="product" className="page-wrapper">
             <GoBack category={category} />
+
             <div className="metadata">
                 <ProductCard image={productData.image.mobile} productDescription={productData.description} productTitle={productData.name}></ProductCard>
                 <p className="product-price">$ {productData.price}</p>
                 <ProductQuantity />
             </div>
 
-            <div className="features" style={{ "whiteSpace": "pre-wrap" }}>
-                <h3>Features</h3>
-                <p>
-                    {productData.features}
-                </p>
-            </div>
-            
-            <div className="included">
-                <h3>In the box</h3>
+            <ContentWrapper title="Features">
+                <p>{productData.features}</p>
+            </ContentWrapper>
+
+            <ContentWrapper title="In the box">
                 {productData.includes.map((feature, key) => {
                     return (
-                        <p key={key}><span>{feature.quantity}X</span> {feature.item}</p>
+                        <div className="item">
+                            <span className="included-qty">{feature.quantity}x</span><p key={key}>{feature.item}</p>
+                        </div>
 
                     )
                 })}
-            </div>
+            </ContentWrapper>
+
             <div className="gallery">
                 {Object.keys(productData.gallery).map((image, key) => {
                     return (
@@ -50,6 +51,7 @@ const Product = () => {
                     )
                 })}
             </div>
+
             <div className="suggested-products">
                 <h3>You may also like</h3>
                 {productData.others.map((item, key) => {
