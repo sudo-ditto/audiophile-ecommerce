@@ -6,6 +6,9 @@
 
         .product-card {
             margin: 0;
+            .product-data__wp {
+                text-align: left;
+            }
         }
         
         .product-price {

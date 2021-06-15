@@ -13,11 +13,15 @@ import Button from '../components/UI/Button';
 const Product = () => {
     const { product } = useParams();
     const { category } = useParams();
-
+    let selectedQty = 1;
     const productData = data.find(prod => {
         return prod.slug === product;
-    }
-    );
+    });
+
+    useEffect(() => {
+        selectedQty = document.body.querySelector('.qty-value');
+    }, [selectedQty.textContent]);
+    
     return (
         <section id="product" className="page-wrapper">
             <GoBack category={category} />

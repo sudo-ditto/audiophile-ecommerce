@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductData from './ProductData';
 
-const ProductCard = ({image, imageAlt, productTitle, productDescription, isNew}) => {
+const ProductCard = ({image, imageAlt, productTitle, productDescription, children, isNew}) => {
     return (
         <div className="product-card">
             <div className="product-image__container">
@@ -11,6 +11,7 @@ const ProductCard = ({image, imageAlt, productTitle, productDescription, isNew})
                 <h2 className="product-name">{productTitle}</h2>
                 <p className="product-description">{productDescription}</p>
             </ProductData>
+            {children ? children : ""}
         </div>
     )
 }

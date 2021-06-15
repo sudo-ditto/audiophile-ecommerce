@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../../assets/data/data';
 import { useParams } from 'react-router';
 import ProductCard from '../components/ProductComponents/ProductCard';
+import Button from '../components/UI/Button';
 
 const Products = () => {
     const { category } = useParams();
@@ -16,8 +17,13 @@ const Products = () => {
                 {data.map(product => {
                     if (product.category === category) {
                         return (
-                            <ProductCard urlLink="/" key={product.id} image={product.image.mobile} productTitle={product.name}
-                                productDescription={product.description} imageAlt={product.name}></ProductCard>
+                            <>
+                                <ProductCard urlLink="/" key={product.id} image={product.image.mobile} productTitle={product.name}
+                                    productDescription={product.description} imageAlt={product.name}>
+
+                                    <Button className="btn product-btn--orange"urlLink={`/products/${category}/${product.slug}`}>See product</Button>
+                                    </ProductCard>
+                            </>
                         )
                     }
                 })}
