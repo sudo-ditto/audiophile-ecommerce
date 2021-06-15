@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductData from '../ProductComponents/ProductData';
+import Button from '../UI/Button';
 
 const Hero = () => {
     return (
@@ -8,6 +9,7 @@ const Hero = () => {
                 <h1 id="hero-title">XX99 Mark II HeadphoneS</h1>
                 <p className="product-description">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
             </ProductData>
+            <Button className="btn product-btn--orange">See product</Button>
         </section>
     )
 }

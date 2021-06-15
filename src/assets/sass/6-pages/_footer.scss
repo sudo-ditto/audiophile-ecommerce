@@ -1,8 +1,8 @@
 footer {
     text-align      : center;
     background-color: $footerBgColor;
-
-
+    color: white;
+    
     .footer-upper {
         margin-bottom: 50px;
 
@@ -20,7 +20,7 @@ footer {
         }
     }
 
-    .footer-description,
+    .footer-description p,
     .copyright {
         color  : $lightWhite;
         opacity: .5;
