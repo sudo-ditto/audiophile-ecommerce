@@ -16,7 +16,7 @@ const ProductData = ({ children, newProduct, type, btn, urlLink }) => {
             }
             {/* Heading and para*/}
             {children ? children : ""}
-            <Button urlLink="/" className={btnClassList}>See product</Button>
+            {/* <Button urlLink="/products" className={btnClassList}>See product</Button> */}
         </div>
     )
 }
