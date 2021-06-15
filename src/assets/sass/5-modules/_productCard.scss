@@ -4,10 +4,16 @@
     
     .product-image__container {
         margin-bottom: 20px;
-        text-align: center;
+        // text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
     }
     .product-data__wp {
         width: 100%;
+        text-align: left;
 
         .product-description {
             margin: 20px 0;

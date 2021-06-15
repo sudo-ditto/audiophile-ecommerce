@@ -7,8 +7,8 @@
 
         // New product subtitle
         .overline {
-            color  : $newProductColor;
-            opacity: 0.5;
+            color     : $newProductColor;
+            opacity   : 0.5;
             margin-top: 50px;
         }
 
@@ -18,10 +18,27 @@
 
         .product-description {
             font-weight: 100;
-            opacity: 0.8;
-            margin: 25px 0 40px 0;
+            opacity    : 0.8;
+            margin     : 25px 0 40px 0;
         }
     }
+
+        &--product {
+            @extend .product-data__wp;
+    
+            // New product subtitle
+            .overline {
+                color: $primaryColor;
+            }
+    
+            .product-name {
+            }
+    
+            .product-description {
+                opacity    : 0.5;
+                margin     : 40px 0 40px 0;
+            }
+        }
 
     text-align: center;
     width     : 90%

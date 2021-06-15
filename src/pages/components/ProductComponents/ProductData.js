@@ -3,7 +3,7 @@ import Button from '../UI/Button';
 
 const ProductData = ({ children, newProduct, type, btn, urlLink }) => {
 
-    const classList = `product-data__wp ${type === "hero" ? "product-data__wp--hero" : type === "home" ? "product-description__wp--home" : "product-description__wp--product"}`
+    const classList = `product-data__wp ${type === "hero" ? "product-data__wp--hero" : type === "home" ? "product-data__wp--home" : "product-data__wp--product"}`
 
     const btnClassList = `product-btn--${btn}`;
     return (
