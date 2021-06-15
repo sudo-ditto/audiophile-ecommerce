@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductData from '../ProductComponents/ProductData';
-import Button from '../UI/Button';
 
 const Hero = () => {
     return (

@@ -15,8 +15,20 @@
         }
     }
 
+    img {
+        min-height: 130px;
+        background-size: cover;
+    }
+
     .content-title {
         margin-bottom: 20px;
+    }
+    .product-data {
+        text-align: center;
+
+        h3 {
+            margin: 35px 0;
+        }
     }
 
 }

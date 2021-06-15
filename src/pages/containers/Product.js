@@ -4,11 +4,11 @@ import data from '../../assets/data/data';
 import { useParams } from 'react-router';
 import AboutAudioPhile from '../components/HomeComponents/AboutAudioPhile';
 import Categories from '../components/CategoryComponents/Categories';
-import Button from '../components/UI/Button';
 import ProductQuantity from '../components/ProductComponents/ProductQuantity';
 import GoBack from '../components/UI/GoBack';
 import ContentWrapper from '../components/ProductComponents/ContentWrapper';
 import Gallery from '../components/ProductComponents/Gallery';
+import Button from '../components/UI/Button';
 
 const Product = () => {
     const { product } = useParams();
@@ -35,7 +35,7 @@ const Product = () => {
             <ContentWrapper title="In the box">
                 {productData.includes.map((feature, key) => {
                     return (
-                        <div className="item">
+                        <div className="item" key={key}>
                             <span className="included-qty">{feature.quantity}x</span><p key={key}>{feature.item}</p>
                         </div>
 
@@ -45,8 +45,7 @@ const Product = () => {
 
             <Gallery productData={productData} />
 
-            <div className="suggested-products">
-                <h3>You may also like</h3>
+            <ContentWrapper title="You may also like">
                 {productData.others.map((item, key) => {
                     return (
                         <div key={key} className="product-card">
@@ -59,7 +58,7 @@ const Product = () => {
 
                     )
                 })}
-            </div>
+            </ContentWrapper>
             <Categories />
             <AboutAudioPhile />
         </section>

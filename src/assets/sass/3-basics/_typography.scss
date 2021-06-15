@@ -110,8 +110,8 @@ h3 {
 
 #product {
     .product-price {
-        font-size: 18px;
-        font-weight: 600;
+        font-size     : 18px;
+        font-weight   : 600;
         letter-spacing: 1.5px;
     }
 }
@@ -124,6 +124,12 @@ h3 {
 
     .included-qty {
         font-weight: bold;
-        font-size: 15px;
+        font-size  : 15px;
+    }
+
+    .product-data {
+        h3 {
+            font-size: 22px;
+        }
     }
 }
