@@ -23,8 +23,8 @@ const ProductQuantity = () => {
                 <span onClick={() => dispatch({ type: 'decrement' })}>-</span>
                 {state.qty}
                 <span onClick={() => dispatch({ type: 'increment' })}>+</span>
-
             </div>
+            <button className="btn product-btn--orange">Add to cart</button>
         </div>
     )
 }

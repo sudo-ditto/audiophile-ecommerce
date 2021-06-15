@@ -1,0 +1,22 @@
+.product-quantity__container {
+    @include flexItem(space-between, center, row);
+    
+    .qty  {
+        @include flexItem(space-evenly, center, row);
+        background-color: $lightGray;
+        // min-width: 45px;
+        // min-height: 45px;
+        span {
+            padding: 10px 25px;
+            color: black;
+            opacity: 0.5;
+        }
+    }
+    
+           .btn {
+    
+                    min-width: 150px;
+                    min-height: 45px;
+                    padding: 0;
+                }
+}

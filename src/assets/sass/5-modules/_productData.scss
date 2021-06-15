@@ -1,6 +1,4 @@
 .product-data__wp {
-    height: 50%;
-
     &--hero {
         @extend .product-data__wp;
         color: white;
@@ -23,23 +21,21 @@
         }
     }
 
-        &--product {
-            @extend .product-data__wp;
-    
-            // New product subtitle
-            .overline {
-                color: $primaryColor;
-            }
-    
-            .product-name {
-            }
-    
-            .product-description {
-                opacity    : 0.5;
-                margin     : 40px 0 40px 0;
-            }
+    &--product {
+        @extend .product-data__wp;
+
+        // New product subtitle
+        .overline {
+            color: $primaryColor;
         }
 
+        .product-description {
+            opacity: 0.5;
+            margin : 25px 0;
+        }
+    }
+
+    height    : 50%;
     text-align: center;
     width     : 90%
 }

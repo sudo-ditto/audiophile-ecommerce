@@ -21,9 +21,8 @@ const Product = () => {
             <GoBack category={category} />
             <div className="metadata">
                 <ProductCard image={productData.image.mobile} productDescription={productData.description} productTitle={productData.name}></ProductCard>
-                <p>$ {productData.price}</p>
+                <p className="product-price">$ {productData.price}</p>
                 <ProductQuantity />
-                <button className="btn product-btn--orange">Add to cart</button>
             </div>
             <div className="features" style={{ "whiteSpace": "pre-wrap" }}>
                 <h3>Features</h3>
