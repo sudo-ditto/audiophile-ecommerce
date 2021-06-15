@@ -56,7 +56,7 @@ const Product = () => {
                             <img src={item.image.mobile} alt="" />
                             <div className="product-data">
                                 <h3>{item.name}</h3>
-                                <Button urlLink="/" className="product-btn--orange">See product</Button>
+                                <Button urlLink={`/products/${category}/${item.slug}`} className="product-btn--orange">See product</Button>
                             </div>
                         </div>
 
