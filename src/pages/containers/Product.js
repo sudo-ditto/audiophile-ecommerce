@@ -9,12 +9,12 @@ import ProductQuantity from '../components/ProductComponents/ProductQuantity';
 
 const Product = () => {
     const { product } = useParams();
+    const { category } = useParams();
 
     const productData = data.find(prod => {
         return prod.slug === product;
     }
     );
-
     return (
         <section id="product">
             <div className="metadata">
@@ -23,7 +23,7 @@ const Product = () => {
                 <ProductQuantity />
                 <button className="btn product-btn--orange">Add to cart</button>
             </div>
-            <div className="features" style={{ "white-space": "pre-wrap" }}>
+            <div className="features" style={{ "whiteSpace": "pre-wrap" }}>
                 <h3>Features</h3>
                 <p>
                     {productData.features}
@@ -33,9 +33,33 @@ const Product = () => {
                 <h3>In the box</h3>
                 {productData.includes.map((feature, key) => {
                     return (
-                        <p><span>{feature.quantity}X</span> {feature.item}</p>
+                        <p key={key}><span>{feature.quantity}X</span> {feature.item}</p>
 
                     )
+                })}
+            </div>
+            <div className="gallery">
+                {Object.keys(productData.gallery).map((image, key) => {
+                    return (
+                        <img key={key} src={
+                            productData.gallery[image].mobile
+                        } alt="" />
+                    )
+                })}
+            </div>
+            <div className="suggested-products">
+                <h3>You may also like</h3>
+                {productData.others.map((item, key) => {
+                        return (
+                            <div  key={key}className="product-card">
+                                <img src={item.image.mobile} alt="" />
+                                <div className="product-data">
+                                <h3>{item.name}</h3>
+                                <Button  urlLink="/" className="product-btn--orange">See product</Button>
+                                </div>
+                            </div>
+                            
+                            )
                 })}
             </div>
             <Categories />

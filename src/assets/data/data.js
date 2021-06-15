@@ -4,7 +4,7 @@ const data = [
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
     "image": {
-      "mobile": "../images/product-yx1-earphones/mobile/image-product.jpg",
+      "mobile": require("../images/product-yx1-earphones/mobile/image-product.jpg").default,
       "tablet": "../images/product-yx1-earphones/tablet/image-product.jpg",
       "desktop": "../images/product-yx1-earphones/desktop/image-product.jpg"
     },
@@ -37,19 +37,19 @@ const data = [
     ],
     "gallery": {
       "first": {
-        "mobile": "../images/product-yx1-earphones/mobile/image-gallery-1.jpg",
-        "tablet": "../images/product-yx1-earphones/tablet/image-gallery-1.jpg",
-        "desktop": "../images/product-yx1-earphones/desktop/image-gallery-1.jpg"
+        "mobile": require("../images/product-yx1-earphones/mobile/image-gallery-1.jpg").default,
+        "tablet": require("../images/product-yx1-earphones/tablet/image-gallery-1.jpg").default,
+        "desktop": require("../images/product-yx1-earphones/desktop/image-gallery-1.jpg").default
       },
       "second": {
-        "mobile": "../images/product-yx1-earphones/mobile/image-gallery-2.jpg",
-        "tablet": "../images/product-yx1-earphones/tablet/image-gallery-2.jpg",
-        "desktop": "../images/product-yx1-earphones/desktop/image-gallery-2.jpg"
+        "mobile": require("../images/product-yx1-earphones/mobile/image-gallery-2.jpg").default,
+        "tablet": require("../images/product-yx1-earphones/tablet/image-gallery-2.jpg").default,
+        "desktop": require("../images/product-yx1-earphones/desktop/image-gallery-2.jpg").default
       },
       "third": {
-        "mobile": "../images/product-yx1-earphones/mobile/image-gallery-3.jpg",
-        "tablet": "../images/product-yx1-earphones/tablet/image-gallery-3.jpg",
-        "desktop": "../images/product-yx1-earphones/desktop/image-gallery-3.jpg"
+        "mobile": require("../images/product-yx1-earphones/mobile/image-gallery-3.jpg").default,
+        "tablet": "/images/product-yx1-earphones/tablet/image-gallery-3.jpg",
+        "desktop": "/images/product-yx1-earphones/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
@@ -57,7 +57,7 @@ const data = [
         "slug": "xx99-mark-one-headphones",
         "name": "XX99 Mark I",
         "image": {
-          "mobile": "../images/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          "mobile": require("../images/shared/mobile/image-xx99-mark-one-headphones.jpg").default,
           "tablet": "../images/shared/tablet/image-xx99-mark-one-headphones.jpg",
           "desktop": "../images/shared/desktop/image-xx99-mark-one-headphones.jpg"
         }
@@ -66,7 +66,7 @@ const data = [
         "slug": "xx59-headphones",
         "name": "XX59",
         "image": {
-          "mobile": "../images/shared/mobile/image-xx59-headphones.jpg",
+          "mobile": require("../images/shared/mobile/image-xx59-headphones.jpg").default,
           "tablet": "../images/shared/tablet/image-xx59-headphones.jpg",
           "desktop": "../images/shared/desktop/image-xx59-headphones.jpg"
         }
@@ -75,7 +75,7 @@ const data = [
         "slug": "zx9-speaker",
         "name": "ZX9 Speaker",
         "image": {
-          "mobile": "../images/shared/mobile/image-zx9-speaker.jpg",
+          "mobile": require("../images/shared/mobile/image-zx9-speaker.jpg").default,
           "tablet": "../images/shared/tablet/image-zx9-speaker.jpg",
           "desktop": "../images/shared/desktop/image-zx9-speaker.jpg"
         }
