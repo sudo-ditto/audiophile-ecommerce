@@ -8,6 +8,7 @@ import Button from '../components/UI/Button';
 import ProductQuantity from '../components/ProductComponents/ProductQuantity';
 import GoBack from '../components/UI/GoBack';
 import ContentWrapper from '../components/ProductComponents/ContentWrapper';
+import Gallery from '../components/ProductComponents/Gallery';
 
 const Product = () => {
     const { product } = useParams();
@@ -42,15 +43,7 @@ const Product = () => {
                 })}
             </ContentWrapper>
 
-            <div className="gallery">
-                {Object.keys(productData.gallery).map((image, key) => {
-                    return (
-                        <img key={key} src={
-                            productData.gallery[image].mobile
-                        } alt="" />
-                    )
-                })}
-            </div>
+            <Gallery productData={productData} />
 
             <div className="suggested-products">
                 <h3>You may also like</h3>

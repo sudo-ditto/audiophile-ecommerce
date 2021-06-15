@@ -1,0 +1,10 @@
+.gallery {
+    img {
+        border-radius: 10px;
+        min-height   : 150px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 15px;
+        }
+    }
+}
