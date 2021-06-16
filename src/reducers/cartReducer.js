@@ -29,10 +29,10 @@ const cartSlice = createSlice({
                 existingItem.quantity += newItem.qty;
             }
             
-            let cart = JSON.parse(localStorage.getItem('cart'));
-            cart.push(JSON.stringify(state.items));
+            // let cart = JSON.parse(localStorage.getItem('cart'));
+            // cart.push(JSON.stringify(state.items));
             localStorage.setItem('cart', JSON.stringify(state.items));
-            console.log(cart);
+            // console.log(cart);
         }
 
     }
