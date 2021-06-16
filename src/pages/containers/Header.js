@@ -3,11 +3,11 @@ import Cart from '../components/HeaderComponents/Cart';
 import Hamburger from '../components/HeaderComponents/Hamburger';
 import Logo from '../components/UI/Logo';
 
-const Header = () => {
+const Header = ({ clicked }) => {
     return (
         <header className="page-wrapper">
             <div className="menu-logo">
-                <Hamburger />
+                <Hamburger clicked={clicked} />
                 <Logo />
             </div>
             <div className="cart">

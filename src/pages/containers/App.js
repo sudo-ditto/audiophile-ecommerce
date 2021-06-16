@@ -11,14 +11,27 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+
+import { useSelector, useDispatch } from 'react-redux';
+
 import Product from './Product';
-import ModalOverlay from '../components/UI/ModalOverlay';
 import OrderConfirmation from '../components/CheckoutComponents/OrderConfirmation';
+import SideDrawer from './SideDrawer';
+import { sideDrawerActions } from '../../reducers/sideDrawerReducer';
 
 function App() {
+  const dispatch = useDispatch();
+  const sideDrawer = useSelector(state => state.sideDrawer.open);
+
+  console.log(sideDrawer);
+  const toggleSideDrawer = () => {
+    dispatch(sideDrawerActions.toggle());
+  }
+
   return (
     <Router>
-      <Header />
+      {sideDrawer ? <SideDrawer /> : ""}
+      <Header clicked={toggleSideDrawer} />
       {/* <OrderConfirmation></OrderConfirmation> */}
       <Switch>
         <Route path="/" exact>
