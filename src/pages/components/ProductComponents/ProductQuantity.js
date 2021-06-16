@@ -7,9 +7,11 @@ import data from '../../../assets/data/data';
 
 const ProductQuantity = () => {
     const dispatch = useDispatch();
-    const { product } = useParams();
 
     const cart = useSelector(state => state.cart);
+    
+    // Select product slug from params
+    const { product } = useParams();
 
     // Data of product that's currently being displayed
     const selectedProduct = data.find(item => item.slug === product);
@@ -22,13 +24,18 @@ const ProductQuantity = () => {
         dispatch(qtyActions.updateProduct(selectedProduct));
     }, [product])
 
+    // Add item to cart
     const addToCartHandler = () => {
         dispatch(cartActions.addToCart({
+            image: currentProduct.image.mobile,
+            name: currentProduct.name,
+            price: currentProduct.price,
             qty: qty
         }));
 
         console.log(cart);
     }
+    console.log(cart);
 
     return (
         <div className="product-quantity__container">

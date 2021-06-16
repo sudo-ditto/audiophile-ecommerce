@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     qty: 1,
-    currentProduct: {},
+    currentProduct: {}
 }
 
 const qtySlice = createSlice({
