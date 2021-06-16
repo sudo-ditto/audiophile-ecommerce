@@ -26,6 +26,12 @@ function App() {
   console.log(sideDrawer);
   const toggleSideDrawer = () => {
     dispatch(sideDrawerActions.toggle());
+
+    if (sideDrawer) {
+      document.body.classList.remove('scrollable');
+    } else {
+      document.body.classList.add('scrollable');
+    }
   }
 
   return (
