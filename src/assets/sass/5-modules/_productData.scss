@@ -2,7 +2,8 @@
     &--hero {
         @extend .product-data__wp;
         color: white;
-
+        height: fit-content;
+        margin-bottom: 30px;
         // New product subtitle
         .overline {
             color     : $newProductColor;
@@ -18,7 +19,6 @@
             font-weight: 100;
             color: white;
             opacity    : 0.8;
-            margin     : 25px 0 40px 0;
         }
     }
 
@@ -36,7 +36,7 @@
         }
     }
 
-    height    : 50%;
+    // height    : 50%;
     text-align: center;
     width     : 90%
 }
