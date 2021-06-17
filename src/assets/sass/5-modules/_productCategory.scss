@@ -11,10 +11,17 @@
         position        : relative;
         height          : fit-content;
 
-        .category-image {
-            max-width: 80px;
-            top      : -50px;
+        .category-image__wrapper {
+            @include flexItem(center, center, column);
+            height: 100px;
+            width: 100%;
             position : absolute;
+            top      : -50px;
+        }
+
+        .category-image {
+            height: inherit;
+            width: auto;
         }
 
         .category-title {
@@ -24,10 +31,10 @@
         a {
             text-transform: uppercase;
             @include flexItem(center, center, row);
-            color: gray;
-            font-weight: 600;
+            color         : gray;
+            font-weight   : 600;
             letter-spacing: 1px;
-            font-size: 13.5px;
+            font-size     : 13.5px;
 
             .category-arrow {
                 margin-left: 7px;

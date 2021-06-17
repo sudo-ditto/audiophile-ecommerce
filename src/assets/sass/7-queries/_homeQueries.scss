@@ -1,0 +1,37 @@
+@media screen and (min-width: 620px) {
+
+    #home {
+        #categories {
+            @include flexItem(center, center, row);
+            margin-top: 50px;
+            padding   : 80px 25px 20px 25px;
+
+            .category__wrapper {
+                margin-right: 10px;
+                width       : 100%;
+            }
+        }
+    }
+
+    #about {
+        .about-image__container {
+            img {
+                content:url("../../images/shared/tablet/image-best-gear.jpg");
+            }
+        }
+
+        .about-metadata {
+            width: 90%;
+            margin: 60px auto;
+
+            .about-title {
+
+            }
+
+            .about-description {
+
+            }
+        }
+    }
+}
+
