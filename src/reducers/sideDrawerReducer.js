@@ -9,7 +9,6 @@ const sideDrawerSlice = createSlice({
     initialState,
     reducers: {
         toggle(state) {
-            console.log('toggled');
             state.open = !state.open
         }
     }

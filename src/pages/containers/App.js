@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../assets/sass/main.scss';
 
 import Footer from './Footer';
@@ -7,9 +7,9 @@ import Home from './Home';
 import Products from './Products';
 
 import {
-  BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
+  useLocation
 } from 'react-router-dom';
 
 import { useSelector, useDispatch } from 'react-redux';
@@ -20,10 +20,20 @@ import SideDrawer from './SideDrawer';
 import { sideDrawerActions } from '../../reducers/sideDrawerReducer';
 
 function App() {
+  const location = useLocation();
+
   const dispatch = useDispatch();
   const sideDrawer = useSelector(state => state.sideDrawer.open);
 
-  console.log(sideDrawer);
+  useEffect(() => {
+    if (sideDrawer) {
+      document.body.classList.remove('scrollable');
+      dispatch(sideDrawerActions.toggle());
+    } else {
+      return;
+    }
+  }, [location])
+
   const toggleSideDrawer = () => {
     dispatch(sideDrawerActions.toggle());
 
@@ -35,7 +45,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <>
       {sideDrawer ? <SideDrawer /> : ""}
       <Header clicked={toggleSideDrawer} />
       {/* <OrderConfirmation></OrderConfirmation> */}
@@ -51,7 +61,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </ Router>
+    </ >
   );
 }
 
