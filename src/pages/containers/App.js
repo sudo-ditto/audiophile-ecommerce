@@ -18,6 +18,7 @@ import Product from './Product';
 import OrderConfirmation from '../components/CheckoutComponents/OrderConfirmation';
 import SideDrawer from './SideDrawer';
 import { sideDrawerActions } from '../../reducers/sideDrawerReducer';
+import Checkout from './Checkout';
 
 function App() {
   const location = useLocation();
@@ -58,6 +59,9 @@ function App() {
         </Route>
         <Route path="/products/:category" exact>
           <Products />
+        </Route>
+        <Route path="/checkout" exact>
+          <Checkout />
         </Route>
       </Switch>
       <Footer />

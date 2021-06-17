@@ -3,7 +3,7 @@
     #categories {
         @include flexItem(center, center, row);
         margin-top: 50px;
-        padding   : 80px 25px 20px 25px;
+        // padding   : 80px 25px 20px 25px;
 
         .category__wrapper {
             margin-right: 10px;
@@ -48,10 +48,7 @@
 
             .about-title {
                 padding: 0;
-
             }
-
-            .about-description {}
         }
     }
 }
