@@ -3,9 +3,9 @@
         text-align: left;
 
         .footer-upper {
-          
+
             &::before {
-                margin          : 0;
+                margin: 0;
             }
 
             margin-bottom: 30px;
@@ -34,6 +34,43 @@
                 margin: 0;
             }
 
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    footer {
+        .footer-upper {
+            @include flexItem(space-between, center, row);
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top     : 0;
+            }
+
+            margin-bottom: 0;
+
+
+        }
+
+        .footer-description {
+            width: 50%;
+        }
+
+        .footer-end {
+            padding-bottom: 50px;
+
+            @include flexItem(space-between, center, row);
+            margin-top: 0;
+            height: 100px;
+
+            .social {
+                align-self: flex-start;
+            }
+            .copyright {
+                align-self: flex-end;
+            }
         }
     }
 }
