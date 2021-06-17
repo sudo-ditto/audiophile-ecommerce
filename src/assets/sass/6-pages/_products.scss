@@ -2,7 +2,7 @@
     .products-title__container {
         @include flexItem(center, center, column);
         height: $headingHeight;
-        background-color: $primaryBlack;
+        background-color: black;
         color: $lightWhite;
         
         // Center heading

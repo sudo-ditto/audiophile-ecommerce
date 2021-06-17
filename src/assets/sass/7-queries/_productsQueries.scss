@@ -1,0 +1,48 @@
+@media screen and (min-width: 620px) {
+    #products {
+        .products-title__container {
+            height: 300px;
+        }
+
+        .product-data__wp {
+            width : 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #products {
+        .product-card {
+            @include flexItem(center, center, row);
+            gap: 60px;
+
+            &:nth-of-type(2n) {
+                .product-image__container {
+                    order: 2;
+                }
+
+                .product-data__wp {
+                    order: 1;
+                }
+            }
+        }
+
+        .product-data__wp {
+            text-align: left;
+            width     : 35%;
+        }
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    #products {
+        .product-card {
+            .product-data__wp {
+                .product-name {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

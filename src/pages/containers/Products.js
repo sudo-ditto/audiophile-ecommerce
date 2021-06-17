@@ -3,6 +3,8 @@ import data from '../../assets/data/data';
 import { useParams } from 'react-router';
 import ProductCard from '../components/ProductComponents/ProductCard';
 import Button from '../components/UI/Button';
+import Categories from '../components/CategoryComponents/Categories';
+import About from '../components/HomeComponents/AboutAudioPhile';
 
 const Products = () => {
     const { category } = useParams();
@@ -20,14 +22,15 @@ const Products = () => {
                             <>
                                 <ProductCard urlLink="/" key={product.id} image={product.image.mobile} productTitle={product.name}
                                     productDescription={product.description} imageAlt={product.name}>
-
-                                    <Button className="btn product-btn--orange"urlLink={`/products/${category}/${product.slug}`}>See product</Button>
-                                    </ProductCard>
+                                    <Button className="btn product-btn--orange" urlLink={`/products/${category}/${product.slug}`}>See product</Button>
+                                </ProductCard>
                             </>
                         )
                     }
                 })}
             </div>
+            <Categories />
+            <About />
         </section>
     )
 }
