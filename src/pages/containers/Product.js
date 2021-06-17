@@ -21,30 +21,32 @@ const Product = () => {
     useEffect(() => {
         selectedQty = document.body.querySelector('.qty-value');
     }, [selectedQty.textContent]);
-    
+
     return (
         <section id="product" className="page-wrapper">
             <GoBack category={category} />
 
             <div className="metadata">
-                <ProductCard image={productData.image.mobile} productDescription={productData.description} productTitle={productData.name}></ProductCard>
-                <p className="product-price">$ {productData.price}</p>
-                <ProductQuantity />
+                <ProductCard image={productData.image.mobile} productDescription={productData.description} productTitle={productData.name}>
+                    <p className="product-price">$ {productData.price}</p>
+                    <ProductQuantity />
+                </ProductCard>
             </div>
 
             <ContentWrapper title="Features">
                 <p>{productData.features}</p>
             </ContentWrapper>
 
-            <ContentWrapper title="In the box">
-                {productData.includes.map((feature, key) => {
-                    return (
-                        <div className="item" key={key}>
-                            <span className="included-qty">{feature.quantity}x</span><p key={key}>{feature.item}</p>
-                        </div>
-
-                    )
-                })}
+            <ContentWrapper title="In the box" className="features">
+                <div className="items__wrapper">
+                    {productData.includes.map((feature, key) => {
+                        return (
+                            <div className="item" key={key}>
+                                <span className="included-qty">{feature.quantity}x</span><p key={key}>{feature.item}</p>
+                            </div>
+                        )
+                    })}
+                </div>
             </ContentWrapper>
 
             <Gallery productData={productData} />

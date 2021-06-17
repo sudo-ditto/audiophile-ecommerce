@@ -1,0 +1,33 @@
+@media screen and (min-width: 750px) {
+    #product {
+        .metadata {
+            padding: 40px 0;
+
+            .product-card {
+                @include flexItem(space-between, center, row);
+                gap: 50px;
+
+                .product-data__wp {
+                    width: 40%;
+                }
+            }
+        }
+
+        // Items inclided in the box
+        .features {
+            @include flexItem(space-between, start, row);
+
+            .content-title {
+                margin: 0;
+            }
+
+            .items__wrapper {
+                height: 100%;
+                width: 50%;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {}
