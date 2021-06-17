@@ -1,0 +1,39 @@
+@media screen and (min-width: 620px) {
+    footer {
+        text-align: left;
+
+        .footer-upper {
+          
+            &::before {
+                margin          : 0;
+            }
+
+            margin-bottom: 30px;
+
+            .logo {
+                margin-bottom: 40px;
+            }
+
+            .main-nav {
+                ul {
+                    @include flexItem(start, center, row);
+
+                    li {
+                        margin-bottom: 0;
+                        margin-right : 30px;
+                    }
+                }
+            }
+        }
+
+        .footer-end {
+            @include flexItem(space-between, center, row);
+            margin-top: 45px;
+
+            .copyright {
+                margin: 0;
+            }
+
+        }
+    }
+}
