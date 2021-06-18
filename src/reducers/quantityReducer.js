@@ -15,6 +15,9 @@ const qtySlice = createSlice({
         decrement(state) {
             state.qty = state.qty - 1;
         },
+        reset(state) {
+            state.qty = 1;
+        },
         updateProduct(state, action) {
             state.currentProduct = action.payload
         }

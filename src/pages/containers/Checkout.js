@@ -1,5 +1,6 @@
 import React from 'react';
 import BillingAddress from '../components/CheckoutComponents/FormComponents/BillingAddress';
+import OrderSummary from '../components/CheckoutComponents/FormComponents/OrderSummary';
 import PaymentDetails from '../components/CheckoutComponents/FormComponents/PaymentDetails';
 import ShippingInfo from '../components/CheckoutComponents/FormComponents/ShippingInfo';
 import GoBack from '../components/UI/GoBack';
@@ -13,6 +14,7 @@ const Checkout = () => {
                 <BillingAddress />
                 <ShippingInfo />
                 <PaymentDetails />
+                <OrderSummary />
             </form>
         </section>
     )

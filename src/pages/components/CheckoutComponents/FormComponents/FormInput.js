@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const FormInput = ({ labelName, placeholder, inputType, id, name, checked }) => {
     return (
@@ -9,4 +9,4 @@ const FormInput = ({ labelName, placeholder, inputType, id, name, checked }) => 
     )
 }
 
-export default FormInput
+export default FormInput;

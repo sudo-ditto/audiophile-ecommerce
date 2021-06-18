@@ -27,12 +27,14 @@ const ProductQuantity = () => {
     // Add item to cart
     const addToCartHandler = () => {
         dispatch(cartActions.addToCart({
+            id: currentProduct.id,
             image: currentProduct.image.mobile,
             name: currentProduct.name,
             price: currentProduct.price,
             qty: qty
         }));
-
+        dispatch(qtyActions.reset());
+        
         console.log(cart);
     }
     console.log(cart);
