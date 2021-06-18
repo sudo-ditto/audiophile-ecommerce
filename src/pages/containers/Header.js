@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from '../components/HeaderComponents/Cart';
+import CartIcon from '../components/HeaderComponents/CartIcon';
 import Hamburger from '../components/HeaderComponents/Hamburger';
 import Logo from '../components/UI/Logo';
 
@@ -11,7 +11,7 @@ const Header = ({ clicked }) => {
                 <Logo />
             </div>
             <div className="cart">
-                <Cart />
+                <CartIcon />
             </div>
         </header>
     )

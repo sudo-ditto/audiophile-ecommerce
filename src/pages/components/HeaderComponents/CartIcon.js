@@ -2,12 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-const Cart = () => {
+const CartIcon = () => {
     return (
-        <div className="cart">
+        <div className="cart-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
         </div>
     )
 }
 
-export default Cart;
+export default CartIcon;
