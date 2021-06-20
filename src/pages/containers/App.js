@@ -49,7 +49,7 @@ function App() {
   return (
     <>
       {sideDrawer ? <SideDrawer /> : ""}
-      <Cart />
+      {/* <Cart /> */}
       <Header clicked={toggleSideDrawer} />
       {/* <OrderConfirmation></OrderConfirmation> */}
       <Switch>
