@@ -30,14 +30,12 @@ const ProductQuantity = () => {
             id: currentProduct.id,
             image: currentProduct.image.mobile,
             name: currentProduct.name,
+            model: currentProduct.model,
             price: currentProduct.price,
             qty: qty
         }));
         dispatch(qtyActions.reset());
-        
-        console.log(cart);
     }
-    console.log(cart);
 
     return (
         <div className="product-quantity__container">

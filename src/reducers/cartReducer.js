@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     items: [],
+    itemsTotal: 0
 };
 
 const cartSlice = createSlice({
@@ -22,19 +23,21 @@ const cartSlice = createSlice({
                     id: newItem.id,
                     image: newItem.image,
                     name: newItem.name,
-                    price: newItem.price,
+                    model: newItem.model,
+                    price: new Intl.NumberFormat().format(newItem.price),
                     quantity: newItem.qty,
                 });
             } else {
                 existingItem.quantity += newItem.qty;
             }
-            
-            
+
+
             // let cart = JSON.parse(localStorage.getItem('cart'));
             // cart.push(JSON.stringify(state.items));
             localStorage.setItem('cart', JSON.stringify(state.items));
             // console.log(cart);
         }
+       
 
     }
 });

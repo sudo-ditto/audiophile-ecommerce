@@ -3,6 +3,7 @@ const data = [
     "id": 1,
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
+    "model": "YX1",
     "image": {
       "mobile": require("../images/product-yx1-earphones/mobile/image-product.jpg").default,
       "tablet": require("../images/product-yx1-earphones/tablet/image-product.jpg").default,
@@ -86,6 +87,7 @@ const data = [
     "id": 2,
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
+    "model": "XX59",
     "image": {
       "mobile": require("../images/product-xx59-headphones/mobile/image-product.jpg").default,
       "tablet": require("../images/product-xx59-headphones/tablet/image-product.jpg").default,
@@ -165,6 +167,7 @@ const data = [
     "id": 3,
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
+    "model": "XX99 Mark I",
     "image": {
       "mobile": require("../images/product-xx99-mark-one-headphones/mobile/image-product.jpg").default,
       "tablet": require("../images/product-xx99-mark-one-headphones/tablet/image-product.jpg").default,
@@ -244,6 +247,7 @@ const data = [
     "id": 4,
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
+    "model": "XX99 Mark II",
     "image": {
       "mobile": require("../images/product-xx99-mark-two-headphones/mobile/image-product.jpg").default,
       "tablet": require("../images/product-xx99-mark-two-headphones/tablet/image-product.jpg").default,
@@ -327,6 +331,7 @@ const data = [
     "id": 5,
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
+    "model": "ZX7",
     "image": {
       "mobile": require("../images/product-zx7-speaker/mobile/image-product.jpg").default,
       "tablet": require("../images/product-zx7-speaker/tablet/image-product.jpg").default,
@@ -410,6 +415,7 @@ const data = [
     "id": 6,
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
+    "model": "ZX9",
     "image": {
       "mobile": require("../images/product-zx9-speaker/mobile/image-product.jpg").default,
       "tablet": require("../images/product-zx9-speaker/tablet/image-product.jpg").default,

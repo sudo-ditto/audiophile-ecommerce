@@ -1,4 +1,6 @@
 import React from 'react'
+import Cart from '../../../containers/Cart';
+import CartItems from '../../CartComponents/CartItems';
 import Button from '../../UI/Button';
 
 const OrderSummary = () => {
@@ -6,8 +8,8 @@ const OrderSummary = () => {
         <div className="order-summary">
             <h3 className="order-summary-title">Summary</h3>
             <div className="cart-products">
-                Empty af
-            </div>
+                <CartItems/>
+                                </div>
             <Button className="btn product-btn--orange">Continue &amp; pay</Button>
         </div>
     )

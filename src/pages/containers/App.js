@@ -19,6 +19,7 @@ import OrderConfirmation from '../components/CheckoutComponents/OrderConfirmatio
 import SideDrawer from './SideDrawer';
 import { sideDrawerActions } from '../../reducers/sideDrawerReducer';
 import Checkout from './Checkout';
+import Cart from './Cart';
 
 function App() {
   const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
   return (
     <>
       {sideDrawer ? <SideDrawer /> : ""}
+      <Cart />
       <Header clicked={toggleSideDrawer} />
       {/* <OrderConfirmation></OrderConfirmation> */}
       <Switch>
