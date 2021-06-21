@@ -16,7 +16,7 @@
 
             .main-nav {
                 ul {
-                    @include flexItem(start, center, row);
+                    @include flexItem(flex-start, center, row);
 
                     li {
                         margin-bottom: 0;

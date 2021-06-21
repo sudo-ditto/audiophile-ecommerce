@@ -1,11 +1,10 @@
-import React, { useRef, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useRef } from 'react';
+import { useDispatch } from 'react-redux';
 import { cartActions } from '../../../reducers/cartReducer';
 
 const ModalOverlay = ({ children }) => {
     const modal = useRef();
     const dispatch = useDispatch();
-    const cartIsOpen = useSelector(state => state.cart.cartOpen);
 
     const toggleModalHandler = (e) => {
         if (e.target !== e.currentTarget) {

@@ -1,5 +1,4 @@
 import React from 'react'
-import Cart from '../../../containers/Cart';
 import CartItems from '../../CartComponents/CartItems';
 import Button from '../../UI/Button';
 

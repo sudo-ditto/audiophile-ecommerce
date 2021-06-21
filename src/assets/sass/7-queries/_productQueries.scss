@@ -15,7 +15,7 @@
 
         // Items inclided in the box
         .features {
-            @include flexItem(space-between, start, row);
+            @include flexItem(space-between, flex-start, row);
 
             .content-title {
                 margin: 0;

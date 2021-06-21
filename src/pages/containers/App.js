@@ -15,7 +15,7 @@ import {
 import { useSelector, useDispatch } from 'react-redux';
 
 import Product from './Product';
-import OrderConfirmation from '../components/CheckoutComponents/OrderConfirmation';
+// import OrderConfirmation from '../components/CheckoutComponents/OrderConfirmation';
 import SideDrawer from './SideDrawer';
 import { sideDrawerActions } from '../../reducers/sideDrawerReducer';
 import Checkout from './Checkout';

@@ -17,7 +17,7 @@
 
         .form-input {
             // Display radio input and label on the same line
-            @include flexItem(start, center, row);
+            @include flexItem(flex-start, center, row);
 
             label {
                 // Rearranging input order

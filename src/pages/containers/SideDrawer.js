@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../components/UI/Logo';
+// import Logo from '../components/UI/Logo';
 import MainNavigation from '../components/UI/Navigation/MainNavigation';
 
 const SideDrawer = () => {

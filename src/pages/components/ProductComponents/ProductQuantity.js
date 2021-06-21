@@ -8,8 +8,6 @@ import data from '../../../assets/data/data';
 const ProductQuantity = () => {
     const dispatch = useDispatch();
 
-    const cart = useSelector(state => state.cart);
-    
     // Select product slug from params
     const { product } = useParams();
 
@@ -22,7 +20,7 @@ const ProductQuantity = () => {
 
     useEffect(() => {
         dispatch(qtyActions.updateProduct(selectedProduct));
-    }, [product])
+    }, [product, dispatch, selectedProduct])
 
     // Add item to cart
     const addToCartHandler = () => {
