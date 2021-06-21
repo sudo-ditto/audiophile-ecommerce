@@ -13,7 +13,7 @@
     <a href="https://github.com/loretta-arineva/audiophile-ecommerce#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://rest-countries-api-react-redux.netlify.app/">View Demo</a>
+    <a href="https://audiophile-ecommerce.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/loretta-arineva/audiophile-ecommerceissues">Report Bug</a>
     ·
@@ -277,7 +277,7 @@ Check out my [Portfolio](https://loretta-arineva.dev). I hope you love it as muc
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
 </a>  
   
-See live: [Audiophile E-commerce website]](https://audiophile-ecommerce.netlify.app/)
+See live: [Audiophile E-commerce website](https://audiophile-ecommerce.netlify.app/)
 
 Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://github.com/loretta-arineva/audiophile-ecommerce)
 

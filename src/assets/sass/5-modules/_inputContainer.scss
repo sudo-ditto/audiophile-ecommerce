@@ -1,8 +1,12 @@
 .form-input__container {
     margin-bottom: 25px;
 
-    h4 {
-        color: $primaryColor;
+    legend {
+        color        : $primaryColor;
         margin-bottom: 15px;
+    }
+
+    .payment-label {
+        opacity: 1;
     }
 }

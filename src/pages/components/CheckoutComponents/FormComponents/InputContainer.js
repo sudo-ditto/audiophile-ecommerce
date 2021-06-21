@@ -2,10 +2,10 @@ import React from 'react'
 
 const InputContainer = ({ name, children }) => {
     return (
-        <div className="form-input__container">
-            <h4>{name}</h4>
+        <fieldset className="form-input__container">
+            <legend>{name}</legend>
             {children}
-        </div>
+        </fieldset>
     )
 }
 
