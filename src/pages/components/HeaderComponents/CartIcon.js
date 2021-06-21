@@ -8,6 +8,7 @@ const CartIcon = () => {
     const dispatch = useDispatch();
 
     const toggleModalHandler = (e) => {
+        document.body.classList.add('scrollable');
         dispatch(cartActions.toggleCart());
     }
 
