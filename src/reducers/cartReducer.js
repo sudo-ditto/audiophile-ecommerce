@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     items: [],
-    itemsTotal: 0
+    itemsTotal: 0,
+    cartOpen: false
 };
 
 const cartSlice = createSlice({
@@ -36,8 +37,11 @@ const cartSlice = createSlice({
             // cart.push(JSON.stringify(state.items));
             localStorage.setItem('cart', JSON.stringify(state.items));
             // console.log(cart);
+        },
+        toggleCart(state) {
+            state.cartOpen = !state.cartOpen;
         }
-       
+
 
     }
 });

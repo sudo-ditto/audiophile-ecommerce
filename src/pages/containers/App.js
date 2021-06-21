@@ -26,6 +26,7 @@ function App() {
 
   const dispatch = useDispatch();
   const sideDrawer = useSelector(state => state.sideDrawer.open);
+  const cartIsOpen = useSelector(state => state.cart.cartOpen);
 
   useEffect(() => {
     if (sideDrawer) {
@@ -49,7 +50,10 @@ function App() {
   return (
     <>
       {sideDrawer ? <SideDrawer /> : ""}
-      {/* <Cart /> */}
+      {cartIsOpen ?
+        <Cart /> :
+        ""
+      }
       <Header clicked={toggleSideDrawer} />
       {/* <OrderConfirmation></OrderConfirmation> */}
       <Switch>
