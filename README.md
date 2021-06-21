@@ -188,8 +188,8 @@ Styling homepage
 - [X] Create and style home page.
 - [X] Add a side drawer.
 - [X] Create and style product page.
-- [ ] Add cart component and functionality.
-- [ ] Add a checkout.
+- [X] Add cart component and functionality.
+- [X] Add a checkout.
 - [ ] Add order confirmation modal.
 - [ ] Style touchups.
 - [ ] Adding README screenshots.
@@ -220,7 +220,7 @@ Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://
 
 ### Goals:  
 
-I have spent a total of 25 hours building this project.
+I have spent a total of 27 hours building this project.
 
 **Estimate:** 35 hours
 
