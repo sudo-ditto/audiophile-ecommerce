@@ -9,9 +9,9 @@ const CartProduct = ({ product }) => {
                 <p className="product-price">$ {product.price}</p>
             </div>
             <div className="product-quantity">
-                <span onClick="">-</span>
+                <span>-</span>
                 <div className="qty-value">{product.quantity}</div>
-                <span onClick="">+</span>
+                <span>+</span>
             </div>
         </div>
     )
