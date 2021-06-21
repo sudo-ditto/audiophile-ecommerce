@@ -8,14 +8,16 @@ import GoBack from '../components/UI/GoBack';
 const Checkout = () => {
     return (
         <section id="checkout" className="page-wrapper">
-            <GoBack category="headphones"/>
-            <h1>Checkout</h1>
-            <form action="/" className="checkout-form">
-                <BillingAddress />
-                <ShippingInfo />
-                <PaymentDetails />
-                <OrderSummary />
-            </form>
+            <GoBack category="headphones" />
+            <div className="checkout__container">
+                <h1>Checkout</h1>
+                <form action="/" className="checkout-form">
+                    <BillingAddress />
+                    <ShippingInfo />
+                    <PaymentDetails />
+                    <OrderSummary />
+                </form>
+            </div>
         </section>
     )
 }
