@@ -19,12 +19,10 @@ const Products = () => {
                 {data.map(product => {
                     if (product.category === category) {
                         return (
-                            <>
-                                <ProductCard urlLink="/" key={product.id} image={product.image.mobile} productTitle={product.name}
-                                    productDescription={product.description} imageAlt={product.name}>
-                                    <Button className="btn product-btn--orange" urlLink={`/products/${category}/${product.slug}`}>See product</Button>
-                                </ProductCard>
-                            </>
+                            <ProductCard urlLink="/" key={product.id} image={product.image.mobile} productTitle={product.name}
+                                productDescription={product.description} imageAlt={product.name}>
+                                <Button className="btn product-btn--orange" urlLink={`/products/${category}/${product.slug}`}>See product</Button>
+                            </ProductCard>
                         )
                     }
                 })}
