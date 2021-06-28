@@ -204,7 +204,7 @@ Styling homepage
 
 N/A - Coming soon
 
-See live: [Audio[hile E-commerce website]](https://audiophile-ecommerce.netlify.app/)
+See live: [Audiophile E-commerce website](https://audiophile-ecommerce.netlify.app/)
 
 Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://github.com/loretta-arineva/audiophile-ecommerce)
 
