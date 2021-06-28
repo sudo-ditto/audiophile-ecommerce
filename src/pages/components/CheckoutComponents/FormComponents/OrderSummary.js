@@ -9,7 +9,7 @@ const OrderSummary = () => {
             <div className="cart-products">
                 <CartItems/>
                                 </div>
-            <Button className="btn product-btn--orange">Continue &amp; pay</Button>
+            <button className="btn product-btn--orange">Continue &amp; pay</button>
         </div>
     )
 }

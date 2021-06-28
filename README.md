@@ -15,9 +15,9 @@
     <br />
     <a href="https://audiophile-ecommerce.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/loretta-arineva/audiophile-ecommerceissues">Report Bug</a>
+    <a href="https://github.com/loretta-arineva/audiophile-ecommerce/issues">Report Bug</a>
     ·
-    <a href="https://github.com/loretta-arineva/audiophile-ecommerceissues">Request Feature</a>
+    <a href="https://github.com/loretta-arineva/audiophile-ecommerce/issues">Request Feature</a>
   </p>
 </p>
 
