@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import React, { MouseEvent } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import CartImage from '../../assets/images/cart/empty-cart.png';
 
 import styles from '../../assets/styles/scss/main.module.scss';
 
@@ -14,7 +14,7 @@ const CartIcon = () => {
 
     return (
         <div className={styles.CartIcon} onClick={toggleModalHandler}>
-            <FontAwesomeIcon icon={faShoppingCart} />
+            <Image src={CartImage} alt="Cart Icon" width={23} height={22} />
         </div>
     );
 };

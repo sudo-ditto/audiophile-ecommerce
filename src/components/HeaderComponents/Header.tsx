@@ -5,6 +5,7 @@ import Logo from '../UI/Logo';
 import { MouseEventHandler } from 'react';
 
 import styles from '../../assets/styles/scss/main.module.scss';
+import React from 'react';
 
 interface Props {
     clicked: MouseEventHandler<HTMLDivElement>;
@@ -17,9 +18,7 @@ const Header = ({ clicked }: Props) => {
                 <Hamburger clicked={clicked} />
                 <Logo />
             </div>
-            <div className={styles.CartIcon}>
-                <CartIcon />
-            </div>
+            <CartIcon />
         </header>
     );
 };

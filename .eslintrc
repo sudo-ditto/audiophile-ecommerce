@@ -6,6 +6,7 @@
     },
     "extends": [
         "eslint:recommended",
+        "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:jsx-a11y/recommended",
@@ -50,13 +51,8 @@
         "jsx-a11y/mouse-events-have-key-events": "warn",
         "jsx-a11y/accessible-emoji": "warn",
         "jsx-a11y/alt-text": "warn",
-        "jsx-a11y/anchor-has-content": "warn",
-        "jsx-a11y/anchor-is-valid": [
-            "warn",
-            {
-                "aspects": ["noHref", "invalidHref"]
-            }
-        ],
+        "jsx-a11y/anchor-has-content": "off",
+        "jsx-a11y/anchor-is-valid": "off",
         "jsx-a11y/aria-activedescendant-has-tabindex": "warn",
         "jsx-a11y/aria-props": "warn",
         "jsx-a11y/aria-proptypes": "warn",

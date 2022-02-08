@@ -23,6 +23,7 @@
         }
     }
 
+    // Description
     .FooterDescription p,
     .Copyright {
         color: $lightWhite;
@@ -36,14 +37,17 @@
             margin: 50px 0;
         }
 
-        .FooterSocial {
-            ul {
-                @include flexItem(center, center, row);
-                font-size: 30px;
-
-                li {
-                    &:not(:last-child) {
-                        margin-right: 15px;
+        .SocialMedia__container {
+            .SocialMedia__nav {
+                ul {
+                    @include flexItem(center, center, row);
+                    width: 100%;
+                    li {
+                        height: 24px;
+                        width: 24px;
+                        &:not(:last-child) {
+                            margin-right: 15px;
+                        }
                     }
                 }
             }

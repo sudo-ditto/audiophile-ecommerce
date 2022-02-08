@@ -19,12 +19,18 @@
         .Logo {
             @include flexItem(center, center, row);
             width: inherit;
+            a {
+                display: flex;
+            }
         }
     }
 
-    .HamburgerIcon,
-    .CartIcon {
+    .HamburgerIcon {
         height: 20px;
         width: 20px;
+    }
+
+    .CartIcon {
+        @include flexItem(center, center, row);
     }
 }

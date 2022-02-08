@@ -1,5 +1,7 @@
-.main-nav {
+// Navigation
+.MainNavigation {
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     li {
         &:not(:last-child) {
