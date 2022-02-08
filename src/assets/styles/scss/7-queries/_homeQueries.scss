@@ -1,0 +1,53 @@
+@media screen and (min-width: 620px) {
+    #categories {
+        @include flexItem(center, center, row);
+        margin-top: 50px;
+        // padding   : 80px 25px 20px 25px;
+
+        .category__wrapper {
+            margin-right: 10px;
+            width: 100%;
+        }
+    }
+
+    #about {
+        .about-image__container {
+            img {
+                content: url('../../images/shared/tablet/image-best-gear.jpg');
+            }
+        }
+
+        .about-metadata {
+            width: 90%;
+            margin: 60px auto;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #about {
+        @include flexItem(center, center, row);
+        gap: 100px;
+        box-sizing: border-box;
+
+        .about-image__container {
+            order: 2;
+
+            img {
+                height: 100%;
+                content: url('../../images/shared/desktop/image-best-gear.jpg');
+            }
+        }
+
+        .about-metadata {
+            order: 1;
+            width: 50%;
+            box-sizing: border-box;
+            text-align: left;
+
+            .about-title {
+                padding: 0;
+            }
+        }
+    }
+}

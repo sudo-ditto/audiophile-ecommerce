@@ -1,0 +1,30 @@
+.Header {
+    @include flexItem(space-between, center, row);
+    position: fixed;
+    color: $headerColor;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: $headerHeight;
+    border-bottom: 1px solid $borderBottom;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+
+    .HeaderLogo {
+        @include flexItem(center, center, row);
+        width: inherit;
+
+        .Logo {
+            @include flexItem(center, center, row);
+            width: inherit;
+        }
+    }
+
+    .HamburgerIcon,
+    .CartIcon {
+        height: 20px;
+        width: 20px;
+    }
+}

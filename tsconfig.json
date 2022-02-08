@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "typeRoots": ["./node_modules/@types"],
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "baseUrl": "src",
+        "paths": {
+            "test-utils": ["./utils/test-utils"]
+        },
+        "types": ["jest", "node", "react", "prettier", "next"]
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "jest.setup.ts",
+        "jest.config.ts",
+        "src/__tests__/pages/test-utils.ts",
+        "src/utils/test-utils/test-utils.js"
+    ],
+    "exclude": ["node_modules"]
+}

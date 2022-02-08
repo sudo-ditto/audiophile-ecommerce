@@ -1,0 +1,18 @@
+#product {
+    padding-top: 110px;
+
+    .metadata {
+        padding: 40px 0;
+
+        .product-card {
+            margin: 0;
+            .product-data__wp {
+                text-align: left;
+            }
+        }
+
+        .product-price {
+            opacity: 1;
+        }
+    }
+}

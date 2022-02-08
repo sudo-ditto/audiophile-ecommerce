@@ -1,33 +1,38 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/loretta-arineva/audiophile-ecommerce">
-    <img src="./public/android-chrome-192x192.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate">
+    <img src="./public/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-  <h1 align="center">Audiophile E-commerce Website</h1>
+  <h1 align="center">NextJS, Typescript, SASS, Redux Toolkit, Jest, React Testing Library, Prettier Boilerplate</h1>
 
   <p align="center">
-     Front-End Mentor Challenge Solution with React, Redux Toolkit, React Router and SASS (Still in development)
+     The Ultimate NextJS Template
     <br />
-    <a href="https://github.com/loretta-arineva/audiophile-ecommerce#readme"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://audiophile-ecommerce.netlify.app/">View Demo</a>
+    <a href="https://www.npmjs.com/package/nextjs-ts-boilerplate">View on npm</a>
     ·
-    <a href="https://github.com/loretta-arineva/audiophile-ecommerce/issues">Report Bug</a>
+    <a href="https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate/issues">Report Bug</a>
     ·
-    <a href="https://github.com/loretta-arineva/audiophile-ecommerce/issues">Request Feature</a>
+    <a href="https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate/issues">Request Feature</a>
   </p>
 </p>
 
-<a href="https://github.com/loretta-arineva" target="_blank">
+<a href="https://github.com/lucky-lore" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://linkedin.com/in/loretta-arineva" target="_blank">
+<a href="https://www.npmjs.com/~lucky-lore" target="_blank">
+<img src=https://img.shields.io/badge/npm-%2324292e.svg?&style=for-the-badge&logo=npm&logoColor=red alt=npm style="margin-bottom: 5px;" />
+</a>
+<a href="https://linkedin.com/in/loretta-krasteva" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>  
-  
+</a>
+<a href="https://twitter.com/_luckylore" target="_blank">
+<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
+</a>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -36,7 +41,6 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#challenge-brief">Challenge Brief</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -44,9 +48,19 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation-and-setup">Installation and Setup</a></li>
-        <li><a href="#getting-started-with-create-react-app">Getting Started With Create React App</a></li>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li>
+            <a href="#getting-started">Getting Started</a>
+            <ul>
+                <li><a href="#prerequisites">Prerequisites</a></li>
+            </ul>
+        </li>
       </ul>
+    </li>
+    <li>
+        <a href="#usage">Usage</a>
+        <ul>
+            <li><a href="#scripts">Scripts</a></li>
+        </ul>
     </li>
     <li>
       <a href="#project-status">Project Status</a>
@@ -55,20 +69,8 @@
         <li><a href="#next-steps">Next Steps</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#project-screenshots">Project Screenshots</a>
-      <ul>
-        <li><a href="#preview">Preview</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#reflection">Reflection</a>
-      <ul>
-        <li><a href="#goals">Goals</a></li>
-      </ul>
-    </li>
     <li><a href="#support-me">Support Me</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Deployment</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -77,152 +79,105 @@
   </ol>
 </details>
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-**Note**: Project is still in development!
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+As a professional developer that loves doing side projects in my free time, it just puts me off to think about having to spend a day or two just configuring my project rather than coding. Therefore I created the ultimate boilerplate project and with utmost pleasure and excitement I share it with all of you so that you can get started with coding right away!
 
-[Audiophile E-commerce Website](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx/) is a project that I built as a challenge for [frontendmentor.io](https://www.frontendmentor.io).
+This is a starter template (boilerplate) project that uses NextJS, Typescript, SASS, Redux Toolkit, RTL (React Testing Library), Jest, ESlint, Prettier and Git Hooks (Husky). It is everything that you need to get started and has the most useful react scripts already added. Check <a href="#scripts">Scripts</a> for more information.
 
-### Challenge Brief
-
-Your challenge is to build out this multi-page e-commerce website and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-If you choose to use a JS-heavy approach, we provide a local `data.json` file for the products. If you want to take it up a notch, feel free to build this as a full-stack application or use a headless CMS!
-
-Your users should be able to:
-
-* View the optimal layout for the app depending on their device's screen size
-* See hover states for all interactive elements on the page
-* Add/Remove products from the cart
-* Edit product quantities in the cart
-* Fill in all fields in the checkout
-* Receive form validations if fields are missed or incorrect during checkout
-* See correct checkout totals depending on the products in the cart
-* Shipping always adds $50 to the order
-* VAT is calculated as 20% of the product total, excluding shipping
-* See an order confirmation modal after checking out with an order summary
-* **Bonus**: Keep track of what's in the cart, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app)
-
-#### Difficulty
-> **5 Guru**
-
-**Difficulty reference:**
-1. Newbie
-2. Junior
-3. Intermediate
-4. Advanced
-5. Guru
+It has the best linter rules to get started with, as well as the `eslint-plugin-jsx-a11y` accessibility plugin to write the best code possible. These are initial configurations that you are not bound to and can be customized to your liking. You can easily make your own configurations, change some of the used frameworks (you could swap SASS for MUI or some other styling framework that you love!).
 
 ### Built With
 
-This section lists any major frameworks and methodologies that I used to build my project.
+This section lists any major frameworks and tools that I used to build this boilerplate.
 
-* [React](https://reactjs.org/)
-* [Redux Toolkit](https://redux-toolkit.js.org/)
-* [React Router](https://reactrouter.com/)
-* [SASS](https://sass-lang.com/)
-* [Figma](https://www.figma.com/)
-* Flexbox
-* Mobile-first Workflow
-* Semantic HTML5 markup
-
+-   [React](https://reactjs.org/)
+-   [NextJS](https://nextjs.org/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [SASS](https://sass-lang.com/)
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
+-   [Jest](https://jestjs.io/)
+-   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+-   [Husky](https://typicode.github.io/husky/#/)
+-   [Prettier](https://prettier.io/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Installation and Setup
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+Alternatively, clone down the [repository](https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate).
+
+You will need `node` and `npm` installed globally on your machine.
 
 Installation:
 
-`npm install`  
+`npm install`
 
-To Start Server:
+To Start Dev Server:
 
-`npm start`  
+`npm run dev`
 
 To Visit App:
 
-`localhost:3000`  
+`localhost:3000`
 
+### Getting Started
 
-### Getting Started with Create React App
+#### Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an example of how to list things you need to use the software and how to install them.
 
-#### `npm run build`
+-   npm
+    ```sh
+    npm install npm@latest -g
+    ```
+-   onchange - used in the scripts to listen for changes in files and automatically format them for you.
+    ```sh
+    npm install -g onchange
+    ```
+-   rimraf - needed in the `clean` script. It's used to bypass issues with removing `node_modules` in Windows.
+    ```sh
+    npm install -g rimraf
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Scripts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I've added the following scripts for convenience. Feel free to modify them to your liking.
 
+-   `npm start`: Starts your production build. Requires you to run `npm run build` beforehand.
+-   `npm run dev`: Starts the development server, initially formats all of your code and runs prettier watch mode.
+-   `npm run build`: Build your code for production.
+-   `npm run lint`: Runs ESlint to check and fix errors automatically. This script is used by Husky.
+-   `npm run lint:fix`: Runs `lint` and fixes any found errors.
+-   `npm run prettier`: Outputs prettier errors.
+-   `npm run prettier:fix`: Fixes all prettier errors.
+-   `npm run prettier-watch`: This script uses `onchange` to watch for any changed files and fixes them automatically.
+-   `npm run format`: Formats all of your files based on both prettier and eslint configs.
+-   `npm run prepare`: Prepares .husky
+-   `npm run test`: Runs jest configuration.
+-   `npm run test:watch`: Runs jest watch mode.
+-   `npm run clean`: Removes node_modules and package-lock.json.
+-   `npm run reinstall`: Creates a clean installation.
 
-### Prerequisites
+### Git Hooks - Husky
 
-<!-- This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ``` -->
+Git Hooks are a really handy tool for automating tasks around git. I've initialized husky and added the following hook:
 
+-   `pre-commit` hook: Checks for eslint errors and fixes them automatically for you when you are commiting. Once it has finished its job, your commit is finished.
+
+Feel free to add more hooks. Read more about [husky](https://typicode.github.io/husky/#/).
 
 ## Project Status
 
 ### Current
-Styling homepage
 
-### Next steps:
-- [X] Create initial project structure.
-- [X] Create and style header.
-- [X] Create and style footer.
-- [X] Create and style home page.
-- [X] Add a side drawer.
-- [X] Create and style product page.
-- [X] Add cart component and functionality.
-- [X] Add a checkout.
-- [ ] Add order confirmation modal.
-- [ ] Style touchups.
-- [ ] Adding README screenshots.
-- [ ] Adding a loading component.
-- [ ] Adding animations.
-- [ ] Optimizing and refactoring code.
-
-
-## Project Screenshots
-
-### Preview:   
-
-N/A - Coming soon
-
-See live: [Audiophile E-commerce website](https://audiophile-ecommerce.netlify.app/)
-
-Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://github.com/loretta-arineva/audiophile-ecommerce)
-
-
-
-
-## Reflection
-
-  <!-- - This is a side project to test out my skills.
-  - P.S I love building this!
-  - Initially I was planning on building this with Context API, however after a while it became so cumbersome that I ended up with some spaghetti code and decided to hard reset to my previous commit. The reason I decided to go with Context API is because I thought Redux would be an overkill for this small app and it gets quite repetitive with creating constants, acitions, reducers, combining reducers etc. Fortunately, I found out about an amazing third-party app, built by the Redux team, called Redux Toolkit which is in my opinion very elegant and helps you write very clean code. In just 20 minutes I got the hang of it and I feel like I just won the lottery today. I love it!
-  - P.S by hour 8 I was wondering why my custom component is not rendering and after careful debugging, I saw I wasn't returning it from my map function... this is when I knew I needed a break  -->
-
-### Goals:  
-
-I have spent a total of 27 hours building this project.
-
-**Estimate:** 35 hours
+Completely configured boilerplate.
 
 ## Support me
 
@@ -230,23 +185,22 @@ I have spent a total of 27 hours building this project.
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/LoretaKrasteva?locale.x=en_GB)
 
-
 <!-- USAGE EXAMPLES -->
-## Usage
 
-Audiophile E-comerce Website
+## Deployment
 
-_For more examples, please refer to the [Documentation](https://github.com/loretta-arineva/planets-fact)_
+-   `npm run build` - Builds the app for production. It correctly bundles React in production mode and optimizes the build for the best performance. Your app is ready to be deployed!
 
-
+Once you have ran `npm run build`, you can run the production build locally with `npm start`.
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-See the [open issues](https://github.com/loretta-arineva/planets-fact/issues) for a list of proposed features (and known issues).
-
+See the [open issues](https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -258,31 +212,38 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 <!-- LICENSE -->
+
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
 ### Author
-> Loreta Krasteva
 
-Check out my [Portfolio](https://loretta-arineva.dev). I hope you love it as much as I do!
+<h1>Loretta Krasteva</h1>
 
-<a href="https://github.com/loretta-arineva" target="_blank">
+<a href="https://github.com/lucky-lore" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://linkedin.com/in/loretta-arineva" target="_blank">
+<a href="https://www.npmjs.com/~lucky-lore" target="_blank">
+<img src=https://img.shields.io/badge/npm-%2324292e.svg?&style=for-the-badge&logo=npm&logoColor=red alt=npm style="margin-bottom: 5px;" />
+</a>
+<a href="https://linkedin.com/in/loretta-krasteva" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>  
-  
-See live: [Audiophile E-commerce website](https://audiophile-ecommerce.netlify.app/)
+</a>
+<a href="https://twitter.com/_luckylore" target="_blank">
+<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
+</a>
 
-Project Link: [https://github.com/loretta-arineva/audiophile-ecommerce](https://github.com/loretta-arineva/audiophile-ecommerce)
-
-
+Project Link: [nextjs-ts-rtl-jest-prettier-boilerplate](https://github.com/lucky-lore/nextjs-ts-rtl-jest-prettier-boilerplate)
 
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
-* [Stack Overflow](https://stackoverflow.com/)
+
+Deep appreciation to my greatest assistant:
+
+-   [Stack Overflow](https://stackoverflow.com/)

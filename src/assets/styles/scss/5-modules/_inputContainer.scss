@@ -1,0 +1,31 @@
+// Fieldset styles
+.form-input__container {
+    margin-bottom: 25px;
+
+    legend {
+        color: $primaryColor;
+        margin-bottom: 15px;
+    }
+
+    // Payment method with radio inputs
+    .payment-method__container {
+        .payment-label {
+            opacity: 1;
+            margin-bottom: 15px;
+        }
+
+        .form-input {
+            // Display radio input and label on the same line
+            @include flexItem(flex-start, center, row);
+
+            label {
+                // Rearranging input order
+                order: 2;
+                margin-left: 15px;
+                margin-bottom: 0;
+            }
+        }
+
+        margin-bottom: 15px;
+    }
+}

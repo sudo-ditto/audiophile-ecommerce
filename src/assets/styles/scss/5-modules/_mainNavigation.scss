@@ -1,0 +1,9 @@
+.main-nav {
+    text-transform: uppercase;
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}

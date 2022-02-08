@@ -1,0 +1,16 @@
+.cart-price__container {
+    @include flexItem(space-between, center, row);
+    margin-bottom: 20px;
+    .price-type {
+        text-transform: uppercase;
+    }
+
+    .price-amount {
+        opacity: 1;
+
+        &--orange {
+            @extend .price-amount;
+            color: $primaryColor;
+        }
+    }
+}
